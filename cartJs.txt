@@ -1,0 +1,52 @@
+import React, {Component} from 'react';
+import './App.css'
+import ReactTable from "react-table-6";
+import 'react-table-6/react-table.css'
+import './Cart.css';
+
+
+
+
+class Cart extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            posts: []
+        }
+    }
+
+    componentDidMount(){
+        const url = "http://localhost:8080/users";
+        fetch(url, {
+             method: "GET"}).then(resp => resp.json()).then(posts => {
+                this.setState({posts: posts});
+             })
+    }
+render(){
+    const columns = [
+        
+        {
+            Header: "No.",
+            accessor: "id"
+        },
+        {
+            Header: "Firstname",
+            accessor: "firstname"
+        },
+
+        {
+            Header: "Surname",
+            accessor: "surname"
+        }
+
+    ]
+  return (
+      
+    <ReactTable columns={columns} data={this.state.posts}>
+
+    </ReactTable>
+    
+  )
+}
+}
+export default Cart;

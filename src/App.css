@@ -1,0 +1,48 @@
+
+.dropHere{
+  
+  width: 48%;
+  min-height: 200px;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid;
+  float: right;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-color: rgb(184, 182, 182);
+}
+
+.dropHereDashed{
+  height: 200px;
+  width: 48%;
+  background-color: whitesmoke;
+  margin: 0 auto;
+  text-align: center;
+  border: 4px dashed;
+  float: right;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  opacity: .8;
+  border-color: grey;
+}
+
+.imgUpload {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.registerFormStatus{
+
+  float: right;
+  margin-left: 15px; 
+  margin-bottom: 0px; 
+  margin-top: 1%; 
+}
+
+/*.rt-td {
+  white-space: normal !important
+}*/
